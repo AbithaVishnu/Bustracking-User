@@ -115,63 +115,64 @@ class AllDetails extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 20),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Container(
-                          width: 112,
-                          height: 29,
-                          decoration: BoxDecoration(
-                            color: HexColor("#F5F5F5"),
-                            borderRadius: BorderRadius.circular(6),
-                            border: Border.all(
-                              color: Color(0xFF989898),
-                              width: 1,
+                  Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                            width: 112,
+                            height: 29,
+                            decoration: BoxDecoration(
+                              color: HexColor("#F5F5F5"),
+                              borderRadius: BorderRadius.circular(6),
+                              border: Border.all(
+                                color: Color(0xFF989898),
+                                width: 1,
+                              ),
                             ),
-                          ),
-                          child: Center(
-                            child: Text(
-                              'Palakkad',
-                              style: TextStyle(
-                                fontFamily: 'Poppins',
-                                color: HexColor("#838383"),
-                                fontSize: 15.0,
-                                fontWeight: FontWeight.w500,
-                                letterSpacing: 0.0,
+                            child: Center(
+                              child: Text(
+                                'Palakkad',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: HexColor("#838383"),
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.w500,
+                                  letterSpacing: 0.0,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(left: 16),
-                          width: 112,
-                          height: 29,
-                          decoration: BoxDecoration(
-                            color: HexColor("#F5F5F5"),
-                            borderRadius: BorderRadius.circular(6),
-                            border: Border.all(
-                              color: Color(0xFF989898),
-                              width: 1,
+                          Container(
+                            margin: EdgeInsets.only(left: 16),
+                            width: 112,
+                            height: 29,
+                            decoration: BoxDecoration(
+                              color: HexColor("#F5F5F5"),
+                              borderRadius: BorderRadius.circular(6),
+                              border: Border.all(
+                                color: Color(0xFF989898),
+                                width: 1,
+                              ),
                             ),
-                          ),
-                          child: Center(
-                            child: Text(
-                              'Chittur',
-                              style: TextStyle(
-                                fontFamily: 'Poppins',
-                                color: HexColor("#838383"),
-                                fontSize: 15.0,
-                                fontWeight: FontWeight.w500,
-                                letterSpacing: 0.0,
+                            child: Center(
+                              child: Text(
+                                'Chittur',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: HexColor("#838383"),
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.w500,
+                                  letterSpacing: 0.0,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                      ],
-                    ),
+                        ],
+                      ),
 
-                    Expanded(
-                      child: Stack(
+                      Stack(
                         alignment: Alignment.center,
                         children: [
                           Image.asset(
@@ -180,7 +181,7 @@ class AllDetails extends StatelessWidget {
                             height: 100,
                           ),
                           Positioned(
-                            bottom: 0,
+                            bottom: -2,
                             child: Container(
                               width: 112,
                               height: 29,
@@ -204,9 +205,10 @@ class AllDetails extends StatelessWidget {
                           ),
                         ],
                       ),
-                    ),
 
 
+                    ],
+                  ),
 
                     SizedBox(height: 78,),
 Row(mainAxisAlignment: MainAxisAlignment.center,
