@@ -11,133 +11,130 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body:  Column(
-            children: [
-              Container(
-                width: 362,
-                height: 182,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color.fromRGBO(0, 0, 0, 0.25),
-                      blurRadius: 4,
-                      offset: Offset(0, 3),
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Container(
+
+              color: Colors.white, // Set the background color as needed
+            ),
+            Positioned(
+              left: -347,
+              top: 23,
+              width: 1053,
+              height: 699,
+              child: Image.asset(
+                'Assets/Images/Map of Birmingham (County).png',
+
+              ),
+            ),
+            Container(
+              width: 362,
+              height: 182,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(5),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromRGBO(0, 0, 0, 0.25),
+                    blurRadius: 4,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 33.0, right: 42, top: 26, bottom: 0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                          'Assets/Images/Standing Man.png',
+                          width: 26,
+                          height: 26,
+                        ),
+                        SizedBox(width: 13),
+                        Expanded(
+                          child: Container(
+                            height: 38,
+                            decoration: BoxDecoration(
+                              color: HexColor("#FFFFFF"),
+                              borderRadius: BorderRadius.circular(5),
+                              border: Border.all(color: HexColor("#EB4335"), width: 1),
+                            ),
+                            child: TextFormField(
+                              // Add your first TextFormField properties here
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: "From (Current Location)",
+                                hintStyle: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: HexColor("#A0A0A0"),
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.w500,
+                                  letterSpacing: 0.0,
+                                ),
+                                contentPadding: EdgeInsets.symmetric(horizontal: 19, vertical: 10),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 14.0),
+                      child: Image.asset(
+                        'Assets/Images/Line 3.png',
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                          'Assets/Images/My Location.png',
+                          width: 30,
+                          height: 30,
+                        ),
+                        SizedBox(width: 13),
+                        Expanded(
+                          child: Container(
+                            height: 38,
+                            decoration: BoxDecoration(
+                              color: HexColor("#FFFFFF"),
+                              borderRadius: BorderRadius.circular(5),
+                              border: Border.all(color: HexColor("#EB4335"), width: 1),
+                            ),
+                            child: TextFormField(
+                              // Add your second TextFormField properties here
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: "To",
+                                hintStyle: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: HexColor("#A0A0A0"),
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.w500,
+                                  letterSpacing: 0.0,
+                                ),
+                                contentPadding: EdgeInsets.symmetric(horizontal: 19, vertical: 10),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 33.0, right: 42, top: 26, bottom: 0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            "Assets/Images/Standing Man.png",
-                            width: 26,
-                            height: 26,
-                          ),
-                          SizedBox(width: 13),
-                          Expanded(
-                            child: Container(
-                              height: 38,
-                              decoration: BoxDecoration(
-                                color: HexColor("#FFFFFF"),
-                                borderRadius: BorderRadius.circular(5),
-                                border: Border.all(color: HexColor("#EB4335"), width: 1),
-                              ),
-                              child: TextFormField(
-                                // Add your first TextFormField properties here
-                                decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "From(Current Location)",
-                                  hintStyle: TextStyle(
-                                    fontFamily: 'Poppins',
-                                    color: HexColor("#A0A0A0"),
-                                    fontSize: 15.0,
-                                    fontWeight: FontWeight.w500,
-                                    letterSpacing: 0.0,
-                                  ),
-                                  contentPadding: EdgeInsets.symmetric(horizontal: 19, vertical: 10),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 14.0),
-                        child: Image.asset(
-                          "Assets/Images/Line 3.png",
-                        ),
-                      ),
-                      SizedBox(height: 10,),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Image.asset(
-                            "Assets/Images/My Location.png",
-                            width: 30,
-                            height: 30,
-                          ),
-                          SizedBox(width: 13),
-                          Expanded(
-                            child: Container(
-                              height: 38,
-                              decoration: BoxDecoration(
-                                color: HexColor("#FFFFFF"),
-                                borderRadius: BorderRadius.circular(5),
-                                border: Border.all(color: HexColor("#EB4335"), width: 1),
-                              ),
-                              child: TextFormField(
-                                // Add your second TextFormField properties here
-                                decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "To",
-                                  hintStyle: TextStyle(
-                                    fontFamily: 'Poppins',
-                                    color: HexColor("#A0A0A0"),
-                                    fontSize: 15.0,
-                                    fontWeight: FontWeight.w500,
-                                    letterSpacing: 0.0,
-                                  ),
-                                  contentPadding: EdgeInsets.symmetric(horizontal: 19, vertical: 10),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
               ),
-              Positioned(
-                left: -347,
-                top: 23,
-                child: Container(
-                  width: 1053,
-                  height: MediaQuery.of(context).size.height * 0.60,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(0),
-                    image: DecorationImage(
-                      image: AssetImage("Assets/Images/Map of Birmingham (County).png"),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-      
-        bottomNavigationBar: CustomNavigationBar(),
-
+            ),
+          ],
+        ),
       ),
+      bottomNavigationBar: CustomNavigationBar(),
     );
   }
 }
