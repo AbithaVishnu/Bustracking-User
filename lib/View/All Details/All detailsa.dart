@@ -174,7 +174,9 @@ class AllDetails extends StatelessWidget {
                                       ),
                                     ],
                                   ),
+
                                   Stack(
+                                    alignment: Alignment.bottomCenter,
                                     children: [
                                       Image.asset(
                                         "Assets/Images/Rectangle 1@2x.png",
@@ -182,32 +184,28 @@ class AllDetails extends StatelessWidget {
                                         height: 100,
                                         fit: BoxFit.fill,
                                       ),
-                                      Align(
-                                        alignment: Alignment.bottomCenter,
-                                        child: Container(
-                                          width: 112,
-                                          height: 29,
-                                          decoration: BoxDecoration(
+                                      Container(
+                                        width: 112,
+                                        height: 29,
+                                        decoration: BoxDecoration(
+                                          color: Color(0xFF989898),
+                                          borderRadius: BorderRadius.circular(6),
+                                          border: Border.all(
                                             color: Color(0xFF989898),
-                                            borderRadius: BorderRadius.circular(6),
-                                            border: Border.all(
-                                              color: Color(0xFF989898),
-                                              width: 1,
-                                            ),
+                                            width: 1,
                                           ),
-                                          child: Center(
-                                            child: Text(
-                                              '1h 30m',
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                              ),
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            '1h 30m',
+                                            style: TextStyle(
+                                              color: Colors.black,
                                             ),
                                           ),
                                         ),
                                       ),
                                     ],
                                   ),
-
 
                                 ],
                               ),
