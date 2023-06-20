@@ -76,7 +76,7 @@ class AllDetails extends StatelessWidget {
                     Align(
                       alignment: Alignment.topCenter,
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 26.0),
+                        padding: const EdgeInsets.only(top: 20.0),
                         child: Container(
                           width: 100,
                           height: MediaQuery.of(context).size.height,
