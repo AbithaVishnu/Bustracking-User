@@ -58,7 +58,7 @@ class AllDetails extends StatelessWidget {
               child: LayoutBuilder(
                 builder: (context, constraints) {
                   return Container(
-                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                    margin: EdgeInsets.symmetric(horizontal: 16,),
                     decoration: BoxDecoration(
                       color: HexColor("#F5F5F5"),
                       border: Border.all(color: Color(0xFFB0B0B0), width: 1),
