@@ -79,7 +79,7 @@ class AllDetails extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 26.0),
                         child: Container(
                           width: 100,
-                          height: 100,
+                          height: MediaQuery.of(context).size.height,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
