@@ -174,7 +174,7 @@ class AllDetails extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  SizedBox(height: 10),
+
                                   Stack(
                                     alignment: Alignment.center,
                                     children: [
