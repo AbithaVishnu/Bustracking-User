@@ -25,10 +25,11 @@ class AllDetails extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 0.0), // Adjusted padding
+              padding: const EdgeInsets.only(right: 5.0), // Adjusted padding
               child: Container(
                 color: HexColor("#F5F5F5"),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Image.asset(
                       'Assets/Images/My Location (1).png',
@@ -165,23 +166,13 @@ class AllDetails extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(height: 10), // Adjusted spacing
-                        Container(
-                          width: 193,
-                          height: 100,
-                          decoration: BoxDecoration(
-                            color: HexColor("#F5F5F5"),
-                            borderRadius: BorderRadius.circular(6),
-                            border: Border.all(
-                              color: Color(0xFF989898),
-                              width: 1,
-                            ),
-                          ),
-                          child: Stack(
+                        // Adjusted spacing
+                       Stack(
                             alignment: Alignment.center,
                             children: [
                               Image.asset(
-                                "Assets/Images/Rectangle 1@2x.png",
+                                "Assets/Images/Rectangle 1@2x.png",  width: 193,
+                                height: 100,
                                 fit: BoxFit.fill,
                               ),
                               Positioned(
@@ -209,7 +200,7 @@ class AllDetails extends StatelessWidget {
                               ),
                             ],
                           ),
-                        ),
+
                       ],
                     ),
                     SizedBox(
