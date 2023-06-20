@@ -174,7 +174,6 @@ class AllDetails extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-
                                   Stack(
                                     children: [
                                       Image.asset(
@@ -183,10 +182,8 @@ class AllDetails extends StatelessWidget {
                                         height: 100,
                                         fit: BoxFit.fill,
                                       ),
-                                      Positioned(
-                                        bottom: 0,
-                                        left: 0,
-                                        right: 0,
+                                      Align(
+                                        alignment: Alignment.bottomCenter,
                                         child: Container(
                                           width: 112,
                                           height: 29,
@@ -210,6 +207,7 @@ class AllDetails extends StatelessWidget {
                                       ),
                                     ],
                                   ),
+
 
                                 ],
                               ),
