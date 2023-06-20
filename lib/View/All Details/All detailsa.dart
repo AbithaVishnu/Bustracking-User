@@ -55,7 +55,7 @@ class AllDetails extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                height: MediaQuery.of(context).size.height*0.25,
+                height: MediaQuery.of(context).size.height,
                 margin: EdgeInsets.symmetric(horizontal: 16,vertical: 12 ),
                 decoration: BoxDecoration(
                   color: HexColor("#F5F5F5"),
