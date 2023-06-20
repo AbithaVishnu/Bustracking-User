@@ -54,10 +54,9 @@ class AllDetails extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 1,
               child: Container(
                 height: MediaQuery.of(context).size.height,
-
+                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 30),
                 decoration: BoxDecoration(
                   color: HexColor("#F5F5F5"),
                   border: Border.all(color: Color(0xFFB0B0B0), width: 1),
@@ -76,10 +75,10 @@ class AllDetails extends StatelessWidget {
                     Align(
                       alignment: Alignment.topCenter,
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 20.0),
+                        padding: const EdgeInsets.only(top: 26.0),
                         child: Container(
                           width: 100,
-                          height: MediaQuery.of(context).size.height,
+                          height: 100,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
@@ -117,17 +116,77 @@ class AllDetails extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 20),
-                    Container(
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Container(
+                    Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Container(
+                              width: 112,
+                              height: 29,
+                              decoration: BoxDecoration(
+                                color: HexColor("#F5F5F5"),
+                                borderRadius: BorderRadius.circular(6),
+                                border: Border.all(
+                                  color: Color(0xFF989898),
+                                  width: 1,
+                                ),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Palakkad',
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    color: HexColor("#838383"),
+                                    fontSize: 15.0,
+                                    fontWeight: FontWeight.w500,
+                                    letterSpacing: 0.0,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(left: 16),
+                              width: 112,
+                              height: 29,
+                              decoration: BoxDecoration(
+                                color: HexColor("#F5F5F5"),
+                                borderRadius: BorderRadius.circular(6),
+                                border: Border.all(
+                                  color: Color(0xFF989898),
+                                  width: 1,
+                                ),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Chittur',
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    color: HexColor("#838383"),
+                                    fontSize: 15.0,
+                                    fontWeight: FontWeight.w500,
+                                    letterSpacing: 0.0,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            Image.asset(
+                              "Assets/Images/Rectangle 1@2x.png",
+                              width: 193,
+                              height: 100,
+                            ),
+                            Positioned(
+                              bottom: -2,
+                              child: Container(
                                 width: 112,
                                 height: 29,
                                 decoration: BoxDecoration(
-                                  color: HexColor("#F5F5F5"),
+                                  color: Color(0xFF989898),
                                   borderRadius: BorderRadius.circular(6),
                                   border: Border.all(
                                     color: Color(0xFF989898),
@@ -136,82 +195,20 @@ class AllDetails extends StatelessWidget {
                                 ),
                                 child: Center(
                                   child: Text(
-                                    'Palakkad',
+                                    '1h 30m',
                                     style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      color: HexColor("#838383"),
-                                      fontSize: 15.0,
-                                      fontWeight: FontWeight.w500,
-                                      letterSpacing: 0.0,
+                                      color: Colors.black,
                                     ),
                                   ),
                                 ),
                               ),
-                              Container(
-                                margin: EdgeInsets.only(left: 16),
-                                width: 112,
-                                height: 29,
-                                decoration: BoxDecoration(
-                                  color: HexColor("#F5F5F5"),
-                                  borderRadius: BorderRadius.circular(6),
-                                  border: Border.all(
-                                    color: Color(0xFF989898),
-                                    width: 1,
-                                  ),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    'Chittur',
-                                    style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      color: HexColor("#838383"),
-                                      fontSize: 15.0,
-                                      fontWeight: FontWeight.w500,
-                                      letterSpacing: 0.0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Stack(
-                            alignment: Alignment.center,
-                            children: [
-                              Image.asset(
-                                "Assets/Images/Rectangle 1@2x.png",
-                                width: 193,
-                                height: 100,
-                              ),
-                              Positioned(
-                                bottom: 0,
-                                child: Container(
-                                  width: 112,
-                                  height: 29,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFF989898),
-                                    borderRadius: BorderRadius.circular(6),
-                                    border: Border.all(
-                                      color: Color(0xFF989898),
-                                      width: 1,
-                                    ),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      '1h 30m',
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 78,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
