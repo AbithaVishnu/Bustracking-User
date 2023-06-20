@@ -25,7 +25,7 @@ class AllDetails extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 181.0),
+              padding: const EdgeInsets.only(left: 0.0), // Adjusted padding
               child: Container(
                 color: HexColor("#F5F5F5"),
                 child: Row(
@@ -55,8 +55,7 @@ class AllDetails extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                height: MediaQuery.of(context).size.height,
-                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 30),
+                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10), // Adjusted margin
                 decoration: BoxDecoration(
                   color: HexColor("#F5F5F5"),
                   border: Border.all(color: Color(0xFFB0B0B0), width: 1),
@@ -72,25 +71,20 @@ class AllDetails extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Align(
-                      alignment: Alignment.topCenter,
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 26.0),
-                        child: Container(
-                          width: 100,
-                          height: 100,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: HexColor("#FF5F1F"),
-                              width: 1.67,
-                            ),
-                          ),
-                          child: Image.asset(
-                            'Assets/Images/Ellipse 11 (3).png',
-                            fit: BoxFit.fill,
-                          ),
+                    SizedBox(height: 26),
+                    Container(
+                      width: 100,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: HexColor("#FF5F1F"),
+                          width: 1.67,
                         ),
+                      ),
+                      child: Image.asset(
+                        'Assets/Images/Ellipse 11 (3).png',
+                        fit: BoxFit.fill,
                       ),
                     ),
                     SizedBox(height: 10),
@@ -146,7 +140,6 @@ class AllDetails extends StatelessWidget {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.only(left: 16),
                               width: 112,
                               height: 29,
                               decoration: BoxDecoration(
@@ -172,43 +165,55 @@ class AllDetails extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Stack(
-                          alignment: Alignment.center,
-                          children: [
-                            Image.asset(
-                              "Assets/Images/Rectangle 1@2x.png",
-                              width: 193,
-                              height: 100,
+                        SizedBox(height: 10), // Adjusted spacing
+                        Container(
+                          width: 193,
+                          height: 100,
+                          decoration: BoxDecoration(
+                            color: HexColor("#F5F5F5"),
+                            borderRadius: BorderRadius.circular(6),
+                            border: Border.all(
+                              color: Color(0xFF989898),
+                              width: 1,
                             ),
-                            Positioned(
-                              bottom: -2,
-                              child: Container(
-                                width: 112,
-                                height: 29,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFF989898),
-                                  borderRadius: BorderRadius.circular(6),
-                                  border: Border.all(
+                          ),
+                          child: Stack(
+                            alignment: Alignment.center,
+                            children: [
+                              Image.asset(
+                                "Assets/Images/Rectangle 1@2x.png",
+                                fit: BoxFit.fill,
+                              ),
+                              Positioned(
+                                bottom: 0,
+                                child: Container(
+                                  width: 112,
+                                  height: 29,
+                                  decoration: BoxDecoration(
                                     color: Color(0xFF989898),
-                                    width: 1,
+                                    borderRadius: BorderRadius.circular(6),
+                                    border: Border.all(
+                                      color: Color(0xFF989898),
+                                      width: 1,
+                                    ),
                                   ),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    '1h 30m',
-                                    style: TextStyle(
-                                      color: Colors.black,
+                                  child: Center(
+                                    child: Text(
+                                      '1h 30m',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ],
                     ),
                     SizedBox(
-                      height: 78,
+                      height: 20,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
