@@ -36,7 +36,7 @@ class Mapscreen extends StatelessWidget {
                       child: IconButton(
                         icon: Icon(Icons.arrow_back,size:24,color: HexColor("#FF5F1F")),
                         onPressed: () {
-                          // Handle back button press
+                        Get.back();
                         },
                       ),
                     ),

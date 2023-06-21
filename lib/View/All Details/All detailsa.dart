@@ -17,7 +17,7 @@ class AllDetails extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.arrow_back, size: 24, color: HexColor("#FF5F1F")),
           onPressed: () {
-            Get.toNamed("/Bus");
+            Get.back();
           },
         ),
       ),
@@ -38,7 +38,9 @@ class AllDetails extends StatelessWidget {
                     ),
                     SizedBox(width: 5),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Get.toNamed("Bus");
+                      },
                       child: Text(
                         "Bus Live Tracking",
                         style: TextStyle(
